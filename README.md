@@ -43,10 +43,10 @@ After bazel has finished building the lib please type:\
 IF YOU WANT BUILD DLL FILE\
 **bazel build --config=opt tensorflow:tensorflow.dll**
 ## NOTE:
-If you want build with CUDA support, please type:
-bazel build --config=opt --config=cuda tensorflow:tensorflow.lib
-bazel build --config=opt --config=cuda tensorflow:install_headers
-bazel build --config=opt --config=cuda tensorflow:tensorflow.lib
+If you want build with CUDA support, please type: \
+**bazel build --config=opt --config=cuda tensorflow:tensorflow.lib** \
+**bazel build --config=opt --config=cuda tensorflow:install_headers** \
+**bazel build --config=opt --config=cuda tensorflow:tensorflow.lib**
 
 ## I built tensorflow version 2.6.0 for AVX2 enabled CPU here: (File Tensorflow_AVX2.rar)
 ## https://drive.google.com/drive/folders/15mYovBLNAbFlk9y3uQr430tn2wmiohda?usp=sharing
