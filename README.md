@@ -41,7 +41,7 @@ After answer question type: \
 After bazel has finished building the lib please type:\
 **bazel build --config=opt tensorflow:install_headers**\
 IF YOU WANT BUILD DLL FILE\
-**bazel build --config=opt tensorflow:tensorflow.dll**\
+**bazel build --config=opt tensorflow:tensorflow.dll**
 ## NOTE:
 If you want build with CUDA support, please type:
 bazel build --config=opt --config=cuda tensorflow:tensorflow.lib
