@@ -24,7 +24,7 @@ Download tensorflow source, link: https://github.com/tensorflow/tensorflow \
 Decompression tensorflow.\
 Copy **def_file_filter.py.tpl** file in **Define Symbol Tensorflow DLL/ New Normalize**\
 And paste **../tensorflow-master/tensorflow-master/tensorflow/tools/def_file_filter** (_Repalce def_file_filter.py.tpl file old_)\
-Configure your system build by running the following at the root of your TensorFlow source tree: \
+Running the following at the root of your TensorFlow source tree: \
 Click directory path and delete. Type **cmd** to open command line\
 In command line type:** python configure.py** and answer some question\
 **Please specify the location of python.[Default is...]:** Press Enter key to skip \
