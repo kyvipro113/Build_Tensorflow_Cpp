@@ -46,7 +46,9 @@ IF YOU WANT BUILD DLL FILE\
 If you want build with CUDA support, please type: \
 **bazel build --config=opt --config=cuda tensorflow:tensorflow.lib** \
 **bazel build --config=opt --config=cuda tensorflow:install_headers** \
-**bazel build --config=opt --config=cuda tensorflow:tensorflow.dll**
+**bazel build --config=opt --config=cuda tensorflow:tensorflow.dll** \
+During runtime if missing symbol you can copy symbol missing and define to **def_file_filter.py.tpl** \
+Example: def_fp.write("\t ??0Variable@ops@tensorflow@@QEAA@AEBVScope@2@VPartialTensorShape@2@W4DataType@2@@Z\n")
 
-## I built tensorflow version 2.6.0 for AVX2 enabled CPU here: (File Tensorflow_AVX2.rar)
-## https://drive.google.com/drive/folders/15mYovBLNAbFlk9y3uQr430tn2wmiohda?usp=sharing
+## I built tensorflow version 2.6.0 for AVX2 enabled CPU here: (File Tensorflow_AVX2_New.rar)
+## https://drive.google.com/file/d/1cjkmhGOH526pgNLFCNUJ0Z244whfxNAt/view?usp=sharing
