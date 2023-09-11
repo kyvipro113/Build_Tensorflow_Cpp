@@ -278,6 +278,32 @@ def main():
     
     def_fp.write("\t ?WithOpNameImpl@Scope@tensorflow@@AEBA?AV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z\n")
     # End Fix
+
+    # Begin Fix 3 For train CNN model
+    #def_fp.write("\t ??0ClientSession@tensorflow@@QEAA@AEBVScope@1@@Z\n")
+    #def_fp.write("\t ??1ClientSession@tensorflow@@QEAA@XZ\n")
+    #def_fp.write("\t ?Run@ClientSession@tensorflow@@QEBA?AVStatus@2@AEBV?$vector@VOutput@tensorflow@@V?$allocator@VOutput@tensorflow@@@std@@@std@@PEAV?$vector@VTensor@tensorflow@@V?$allocator@VTensor@tensorflow@@@std@@@5@@Z\n")
+
+    def_fp.write("\t ??0Variable@ops@tensorflow@@QEAA@AEBVScope@2@VPartialTensorShape@2@W4DataType@2@@Z\n")
+    def_fp.write("\t ??0Equal@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0SoftmaxCrossEntropyWithLogits@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0ArgMax@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0Relu@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@@Z\n")
+    def_fp.write("\t ??0Conv2D@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1AEBV?$Span@$$CBH@lts_20210324@absl@@Vstring_view@67@@Z\n")
+    def_fp.write("\t ??0Prod@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0MatMul@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0MaxPool@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@AEBV?$Span@$$CBH@lts_20210324@absl@@2Vstring_view@67@@Z\n")
+    def_fp.write("\t ??0Softmax@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@@Z\n")
+    def_fp.write("\t ??0Shape@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@@Z\n")
+    def_fp.write("\t ??0ApplyGradientDescent@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@11@Z\n")
+    def_fp.write("\t ??0BiasAdd@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0Cast@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@W4DataType@2@@Z\n")
+    def_fp.write("\t ??0Mean@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0Reshape@ops@tensorflow@@QEAA@AEBVScope@2@VInput@2@1@Z\n")
+    def_fp.write("\t ??0Operation@tensorflow@@QEAA@PEAVNode@1@@Z\n")
+    def_fp.write("\t ?ToGraphDef@Scope@tensorflow@@QEBA?AVStatus@2@PEAVGraphDef@2@@Z\n")
+
+    # End Fix 3
     
     # New Fix 1
     def_fp.write("\t ??0Placeholder@ops@tensorflow@@QEAA@AEBVScope@2@W4DataType@2@AEBUAttrs@012@@Z\n")
