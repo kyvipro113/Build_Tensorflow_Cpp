@@ -35,7 +35,7 @@ If you build CUDA support please type: Y\
 **Please specify optimization flasg to use during complilation ... [Default is /arch:AVX]:** Press Enter key to skip\
 If your CPU supported AVX2 please type: **/arch:AVX2**\
 **Would you like to override eigen strong inline for sone C++ compilatiopn to reduce the compilation tine? [Y/n]: Y**\
-**Would uou line to interactively configure .WORKSPACE for Androi builds? [y/N]: N**\
+**Would you line to interactively configure .WORKSPACE for Androi builds? [y/N]: N**\
 After answer question type: \
 **bazel build --config=opt tensorflow:tensorflow.lib**\
 After bazel has finished building the lib please type:\
