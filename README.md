@@ -42,8 +42,8 @@ After bazel has finished building the lib please type:\
 **bazel build --config=opt tensorflow:install_headers**\
 IF YOU WANT BUILD DLL FILE\
 **bazel build --config=opt tensorflow:tensorflow.dll**
-**DURING BUILD IF ERROR (C1060): COMPLIER IS OUT OF HEAP SPACE YOU CAN USE: local_ram_resources**
-\*example 1: bazel build --local_ram_resources=HOST_RAM*.50 --config=opt tensorflow:tensorflow.lib\
+**DURING BUILD IF ERROR (C1060): COMPLIER IS OUT OF HEAP SPACE YOU CAN USE: local_ram_resources**\
+*example 1: bazel build --local_ram_resources=HOST_RAM*.50 --config=opt tensorflow:tensorflow.lib\
 example 2: bazel build --local_ram_resources=HOST_RAM*0.50 --jobs=1 --config=opt tensorflow:tensorflow.lib*
 ## NOTE:
 If you want build with CUDA support, please type: \
