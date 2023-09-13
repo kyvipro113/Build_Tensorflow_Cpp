@@ -54,6 +54,7 @@ During runtime if missing symbol you can copy symbol missing and define to **def
 Example: def_fp.write("\t ??0Variable@ops@tensorflow@@QEAA@AEBVScope@2@VPartialTensorShape@2@W4DataType@2@@Z\n") \
 After you need download **google protobuf** to **include/tensorflow** header. In here I use **protobuf 3.19.4** for **tensorflow 2.6.0** \
 You can download **google protobuf** in here: \
-Link: https://github.com/protocolbuffers/protobuf/releases
+Link: https://github.com/protocolbuffers/protobuf/releases \
+**WARNING: Tensorflow 2.10 is the last version support for CUDA in native Windows. If you want use on Windows you can use WSL2 or Tensorflow-DirectML-Plugin**\
 ## I built tensorflow version 2.6.0 for AVX2 enabled CPU here: (File Tensorflow_AVX2_New.rar)
 ## https://drive.google.com/file/d/1cjkmhGOH526pgNLFCNUJ0Z244whfxNAt/view?usp=sharing
