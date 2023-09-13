@@ -26,7 +26,7 @@ Copy **def_file_filter.py.tpl** file in **Define Symbol Tensorflow DLL/ New Norm
 And paste **../tensorflow-master/tensorflow-master/tensorflow/tools/def_file_filter** (_Repalce def_file_filter.py.tpl file old_)\
 Running the following at the root of your TensorFlow source tree: \
 Click directory path and delete. Type **cmd** to open command line\
-In command line type:** python configure.py** and answer some question\
+In command line type: **python configure.py** and answer some question\
 **Please specify the location of python.[Default is...]:** Press Enter key to skip \
 **Please input the desired Python library path to use. Default is [...]:** Press Enter key to skip\
 **Do you wish to build TensorFlow with ROCm support? [y/N]: N**\
